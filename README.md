@@ -177,6 +177,25 @@ npm run dev
 
 ---
 
+## 🌐 Deploy to Render (Live in 2 Minutes)
+
+This repository includes a `render.yaml` blueprint for automatic full-stack deployment on **[Render](https://render.com/)**:
+
+### Quick Steps to Deploy:
+1. Go to **[dashboard.render.com](https://dashboard.render.com/)** and sign in with your GitHub account.
+2. Click **New +** > **Web Service** (or **Blueprint**).
+3. Connect your repository: `https://github.com/MUTAKANI-DINNI-SRAVYA/FSD-2`.
+4. Render will auto-detect the configuration from `render.yaml`:
+   - **Environment**: `Node`
+   - **Build Command**: `npm run build`
+   - **Start Command**: `npm start`
+   - **Health Check Path**: `/api/health`
+5. *(Optional)* Add your `MONGODB_URI` environment variable from your free [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) cluster under **Environment Variables**. (If left blank, the app runs smoothly using its resilient offline fallback with sample listings).
+6. Click **Deploy Web Service**.
+7. Once deployed, Render gives you a public HTTPS URL (e.g., `https://vyra-marketplace.onrender.com`) where your full-stack React frontend and Express REST API will be live for everyone!
+
+---
+
 ## 📡 REST API Endpoints
 
 ### Authentication Endpoints

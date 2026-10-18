@@ -1,14 +1,15 @@
 {
-  "name": "second-hand-marketplace",
+  "name": "vyra-marketplace",
   "version": "1.0.0",
-  "description": "Full Stack Universal Second-Hand Marketplace for All Audiences (MERN Stack)",
+  "description": "VYRA — Universal Second-Hand Marketplace (MERN Stack)",
   "scripts": {
-    "start": "npm --prefix server start",
+    "build": "npm --prefix client install && npm --prefix client run build && npm --prefix server install",
+    "start": "node server/server.js",
     "server": "npm --prefix server run dev",
     "client": "npm --prefix client run dev",
     "seed": "npm --prefix server run seed"
   },
-  "keywords": ["mern", "second-hand", "marketplace", "college-project"],
+  "keywords": ["mern", "second-hand", "marketplace", "vyra", "react", "express", "mongodb"],
   "author": "",
   "license": "ISC"
 }

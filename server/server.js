@@ -1,6 +1,8 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
+const path = require('path');
+const fs = require('fs');
 const { connectDB, getIsConnected } = require('./config/db');
 const productRoutes = require('./routes/productRoutes');
 const authRoutes = require('./routes/authRoutes');
@@ -41,8 +43,22 @@ app.get('/api/health', (req, res) => {
 app.use('/api/auth', authRoutes);
 app.use('/api/products', productRoutes);
 
-// 404 Route Handler for undefined endpoints
-app.use('*', (req, res) => {
+// Serve static client assets in production if client/dist exists
+const clientDistPath = path.join(__dirname, '../client/dist');
+if (fs.existsSync(clientDistPath)) {
+  app.use(express.static(clientDistPath));
+
+  // Catch-all route to serve React Single Page Application (SPA)
+  app.get('*', (req, res, next) => {
+    if (req.originalUrl.startsWith('/api')) {
+      return next();
+    }
+    res.sendFile(path.join(clientDistPath, 'index.html'));
+  });
+}
+
+// 404 Route Handler for undefined API endpoints
+app.use('/api/*', (req, res) => {
   res.status(404).json({
     success: false,
     message: `API endpoint not found: ${req.originalUrl}`
