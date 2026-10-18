@@ -1,0 +1,14 @@
+{
+  "name": "second-hand-marketplace",
+  "version": "1.0.0",
+  "description": "Full Stack Universal Second-Hand Marketplace for All Audiences (MERN Stack)",
+  "scripts": {
+    "start": "npm --prefix server start",
+    "server": "npm --prefix server run dev",
+    "client": "npm --prefix client run dev",
+    "seed": "npm --prefix server run seed"
+  },
+  "keywords": ["mern", "second-hand", "marketplace", "college-project"],
+  "author": "",
+  "license": "ISC"
+}

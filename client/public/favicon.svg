@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Rounded Squircle App Icon in Burgundy -->
+  <rect width="100" height="100" rx="26" fill="#7A1B2C"/>
+  <!-- Left arm of the V in Pure White -->
+  <path d="M 24 24 L 42 24 L 52 78 L 38 78 Z" fill="#FFFFFF"/>
+  <!-- Right arm base connection -->
+  <path d="M 46 78 L 52 78 L 59 54 L 52 54 Z" fill="#FFFFFF"/>
+  <!-- Leaf element in Soft Rose / Blush Pink -->
+  <path d="M 54 53 C 56 34 72 21 86 17 C 84 35 74 58 60 63 C 56 60 54 56 54 53 Z" fill="#F2D7DE"/>
+  <!-- Subtle leaf vein -->
+  <path d="M 56 51 Q 67 36 82 21" stroke="#7A1B2C" stroke-width="1.2" stroke-linecap="round" opacity="0.4"/>
+</svg>

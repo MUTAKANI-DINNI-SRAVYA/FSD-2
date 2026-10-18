@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90">
+  <g transform="translate(10, 5)">
+    <!-- Emblem: Left arm of V in Burgundy -->
+    <path d="M 14 16 L 36 16 L 50 84 L 34 84 Z" fill="#7A1B2C"/>
+    <!-- Emblem: Right arm base connection -->
+    <path d="M 42 84 L 50 84 L 59 55 L 50 55 Z" fill="#7A1B2C"/>
+    <!-- Emblem: Leaf blooming in Soft Rose -->
+    <path d="M 52 54 C 54 33 73 17 89 13 C 87 34 75 60 59 66 C 55 62 53 57 52 54 Z" fill="#DCA6B0"/>
+    <path d="M 55 52 Q 67 36 84 17" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" opacity="0.6"/>
+  </g>
+  <!-- Wordmark: VYRA -->
+  <text x="115" y="58" font-family="'Plus Jakarta Sans', sans-serif" font-size="48" font-weight="800" letter-spacing="4" fill="#7A1B2C">VYRA</text>
+  <!-- Tagline: VALUE FINDS A NEW LIFE -->
+  <text x="117" y="76" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" font-weight="700" letter-spacing="2.5" fill="#555555">VALUE FINDS A NEW LIFE</text>
+</svg>
